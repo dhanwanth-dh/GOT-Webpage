@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: "Asimovian", sans-serif;
 }
 
 /*index.html*/
-.head-container{
+.head-container {
     padding: 10px;
     background-color: black;
     color: white;
@@ -15,21 +15,35 @@
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-.list1{
+
+.list1 {
     display: flex;
     list-style: none;
     gap: 100px;
 }
-.head-items{
+
+.head-items {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.logo-img{
+
+.logo-img {
     height: 75px;
     width: 75px;
     object-fit: contain;
     border-radius: 50px;
+}
+
+.bod {
+    margin: 0;
+    padding: 0;
+    background-image: url("./Assets/11.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    background-attachment: fixed;
 }
 
 
@@ -37,12 +51,12 @@
 
 
 /*signup.html*/
-.signup{
+.signup {
     display: flex;
     height: 400px;
     width: 400px;
     background-color: rgb(170, 118, 69);
-    
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -51,7 +65,8 @@
     gap: 50px;
     box-shadow: 50px 50px 50px;
 }
-.signup-container{
+
+.signup-container {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -59,37 +74,114 @@
     justify-content: center;
     background-color: rgb(163, 107, 24);
 }
-.data{
+
+.data {
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
     align-items: center;
-    
+
 }
-.data ul{
+
+.data ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.data li label{
+
+.data li label {
     display: inline-block;
     width: 150px;
 }
-.data input{
+
+.data input {
     border-radius: 25px;
     height: 40px;
 }
-.bu{
+
+.bu {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
     border-radius: 55px;
 }
-.bu button{
+
+.bu button {
     height: 30px;
     width: 80%;
     border-radius: 20px;
+}
+
+
+
+
+
+/*Login.html*/
+body {
+    background-color: bisque;
+}
+
+.input-container {
+    padding: 20px;
+    width: 400px;
+    border-radius: 25px;
+    margin-left: 150px;
+    height: 200px;
+    box-shadow: inset -50px 50px 50px rgb(48, 30, 210);
+}
+
+
+
+.input-container2 {
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+    border-radius: 25px;
+    margin-right: 150px;
+    box-shadow: inset 50px 50px 50px rgb(33, 30, 210);
+}
+
+.login-bod {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.bu2 {
+    display: flex;
+    margin-left: 750px;
+    margin-top: 50px;
+}
+
+.bu2 Button {
+    height: 50px;
+    width: 90px;
+    border-radius: 40px;
+}
+
+.signup-line {
+    margin-left: 700px;
+    color: white;
+}
+
+.login-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.log {
+    background-image: url(Assets/jsnow.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    background-attachment: fixed;
 }
