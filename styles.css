@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Asimovian", sans-serif;
+}
+
+/*index.html*/
+.head-container{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    display: flex;
+    gap: 550px;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.list1{
+    display: flex;
+    list-style: none;
+    gap: 100px;
+}
+.head-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-img{
+    height: 75px;
+    width: 75px;
+    object-fit: contain;
+    border-radius: 50px;
+}
+
+
+
+
+
+/*signup.html*/
+.signup{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(170, 118, 69);
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 55px;
+    gap: 50px;
+    box-shadow: 50px 50px 50px;
+}
+.signup-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(163, 107, 24);
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.data ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.data li label{
+    display: inline-block;
+    width: 150px;
+}
+.data input{
+    border-radius: 25px;
+    height: 40px;
+}
+.bu{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 55px;
+}
+.bu button{
+    height: 30px;
+    width: 80%;
+    border-radius: 20px;
+}
