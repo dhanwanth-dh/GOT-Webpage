@@ -6,6 +6,8 @@
 
 /*index.html*/
 .head-container {
+    height: 100px;
+    width: 100%;
     padding: 10px;
     background-color: black;
     color: white;
@@ -14,6 +16,9 @@
     justify-content: space-evenly;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
 .list1 {
@@ -22,10 +27,25 @@
     gap: 100px;
 }
 
+.list1 a {
+    text-decoration: none;
+    color: white;
+    font-family: "Asimovian", sans-serif;
+}
+
 .head-items {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.head-items a {
+    transition: 2s;
+}
+
+.head-items a:hover {
+    color: blue;
+    font-size: 50px;
 }
 
 .logo-img {
@@ -33,18 +53,83 @@
     width: 75px;
     object-fit: contain;
     border-radius: 50px;
+    transition: 2s;
+
+    animation: spin infinite 2s linear;
 }
 
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+.vid{
+    margin-top: 100px;
+    z-index: -1;
+}
+.vi-bg{
+    position: absolute;
+    top: 60;
+    left: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+
 .bod {
-    margin: 0;
-    padding: 0;
-    background-image: url("./Assets/11.jpg");
+    background-image: url("./Assets/tyrion.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     object-fit: contain;
     background-attachment: fixed;
+    color: beige;
 }
+
+
+.content {
+    position: relative;
+    top: 0;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.test {
+    background-color: black;
+    border-radius: 50%;
+    border: 10px solid black;
+    height: 300px;
+    width: 300px;
+    background-image: url("./Assets/lannister-sigil-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 2s;
+    animation: spin infinite 10s linear;
+}
+/* .test:hover{
+    transform: skew(1.5);
+    background-color: white;
+    background-image: url("./Assets/jsnow.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+} */
+
 
 
 
@@ -52,10 +137,11 @@
 
 /*signup.html*/
 .signup {
+    color: white;
     display: flex;
     height: 400px;
     width: 400px;
-    background-color: rgb(170, 118, 69);
+    /* background-color: rgb(170, 118, 69); */
 
     flex-direction: column;
     align-items: center;
@@ -63,7 +149,8 @@
     padding: 30px;
     border-radius: 55px;
     gap: 50px;
-    box-shadow: 50px 50px 50px;
+    border: 5px solid black;
+    /* box-shadow:inset -50px 50px 50px; */
 }
 
 .signup-container {
@@ -73,6 +160,12 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(163, 107, 24);
+    background-image: url("./Assets/throne.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    background-attachment: fixed;
 }
 
 .data {
@@ -97,8 +190,13 @@
 }
 
 .data input {
-    border-radius: 25px;
-    height: 40px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background: transparent
 }
 
 .bu {
